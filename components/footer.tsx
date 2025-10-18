@@ -5,9 +5,8 @@ import { Sparkles, Twitter, Github, Mail } from "lucide-react"
 
 export default function Footer() {
   const socialLinks = [
-    { icon: <Twitter className="h-4 w-4" />, href: "#", label: "Twitter" },
-    { icon: <Github className="h-4 w-4" />, href: "#", label: "GitHub" },
-    { icon: <Mail className="h-4 w-4" />, href: "#", label: "Email" }
+    { icon: <Github className="h-4 w-4" />, href: "https://github.com/Abde03", label: "GitHub" },
+    { icon: <Mail className="h-4 w-4" />, href: "mailto:azzaoui03dev@gmail.com", label: "Email" }
   ]
 
   return (
@@ -27,6 +26,7 @@ export default function Footer() {
                 <a
                   key={index}
                   href={social.href}
+                  target="_blank"
                   aria-label={social.label}
                   className="transition-opacity hover:opacity-80"
                   style={{ color: "var(--muted-foreground)" }}
